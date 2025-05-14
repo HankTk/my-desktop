@@ -1,0 +1,50 @@
+{
+  "name": "vfx-composer-r3f",
+  "author": {
+    "name": "Hendrik Mans",
+    "email": "hendrik@mans.de",
+    "url": "https://hendrik.mans.de"
+  },
+  "description": "React-Three-Fiber bindings for VFX Composer.",
+  "version": "0.4.0",
+  "main": "dist/vfx-composer-r3f.cjs.js",
+  "module": "dist/vfx-composer-r3f.esm.js",
+  "files": [
+    "dist/**",
+    "LICENSE",
+    "README.md"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "build": "preconstruct build"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      [
+        "@babel/preset-typescript",
+        {
+          "isTSX": true,
+          "allExtensions": true
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "@hmans/use-const": "^0.0.1",
+    "@hmans/use-rerender": "^0.0.2",
+    "@hmans/use-version": "^0.0.2",
+    "material-composer-r3f": "^0.2.5",
+    "miniplex": "2.0.0-beta.1",
+    "shader-composer": "^0.4.5",
+    "vfx-composer": "^0.4.0"
+  },
+  "peerDependencies": {
+    "@react-three/fiber": ">=8.0.27",
+    "react": ">=18.1.0",
+    "react-dom": ">=18.1.0",
+    "three": ">=0.141.0"
+  }
+}

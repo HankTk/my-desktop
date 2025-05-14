@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Consolas';
+    font-weight: 400;
+    color: #fafafa;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: contain;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    background: #313453;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}

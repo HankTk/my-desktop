@@ -1,0 +1,42 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "description": "An API built with NodeJS, Express, MongoDB and TypeScript",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./api/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start",
+    "debug": "npm run build:debug",
+    "build:debug": "node $NODE_DEBUG_OPTION --inspect -r ts-node/register ./api/server.ts"
+  },
+  "keywords": [
+    "Dale",
+    "Nguyen"
+  ],
+  "author": "Dale Nguyen <dungnq@itbox4vn.com> (http://dalenguyen.me)",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "body-parser": "^1.18.3",
+    "codelyzer": "^4.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.11",
+    "nodemon": "^1.18.9",
+    "os-monitor": "^1.0.7",
+    "socket.io": "^2.3.0",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {
+    "@angular/compiler": "~7.0.0",
+    "@angular/core": "~7.0.0",
+    "@types/createjs": "0.0.29",
+    "rxjs": "~6.3.3",
+    "ts-node-dev": "^1.0.0-pre.39"
+  }
+}

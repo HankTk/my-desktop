@@ -1,0 +1,43 @@
+{
+  "name": "vfx-composer",
+  "author": {
+    "name": "Hendrik Mans",
+    "email": "hendrik@mans.de",
+    "url": "https://hendrik.mans.de"
+  },
+  "description": "Composable, GPU-driven Visual Effects for Three.js and React-Three-Fiber.",
+  "version": "0.4.0",
+  "main": "dist/vfx-composer.cjs.js",
+  "module": "dist/vfx-composer.esm.js",
+  "files": [
+    "dist/**",
+    "LICENSE",
+    "README.md"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "build": "preconstruct build"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      [
+        "@babel/preset-typescript",
+        {
+          "isTSX": true,
+          "allExtensions": true
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "@shader-composer/three": "workspace:^0.4.9",
+    "material-composer": "^0.2.6",
+    "shader-composer": "workspace:^0.4.9"
+  },
+  "peerDependencies": {
+    "three": ">=0.141.0"
+  }
+}

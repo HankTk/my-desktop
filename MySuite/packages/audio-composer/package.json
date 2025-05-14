@@ -1,0 +1,44 @@
+{
+  "name": "audio-composer",
+  "author": {
+    "name": "Hendrik Mans",
+    "email": "hendrik@mans.de",
+    "url": "https://hmans.co"
+  },
+  "description": "Audio!",
+  "version": "0.0.2",
+  "main": "dist/audio-composer.cjs.js",
+  "module": "dist/audio-composer.esm.js",
+  "files": [
+    "dist/**",
+    "LICENSE",
+    "README.md"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "build": "preconstruct build"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      [
+        "@babel/preset-typescript",
+        {
+          "isTSX": true,
+          "allExtensions": true
+        }
+      ]
+    ]
+  },
+  "peerDependencies": {
+    "@react-three/fiber": "^8.7.0",
+    "react": "^18.2.0",
+    "three": "^0.144.0"
+  },
+  "dependencies": {
+    "@hmans/use-const": "^0.0.1",
+    "statery": "^0.6.2"
+  }
+}

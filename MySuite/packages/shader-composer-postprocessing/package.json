@@ -1,0 +1,36 @@
+{
+  "name": "@shader-composer/postprocessing",
+  "author": {
+    "name": "Hendrik Mans",
+    "email": "hendrik@mans.de",
+    "url": "https://hmans.co"
+  },
+  "description": "Build postprocessing effects using Shader Composer.",
+  "version": "0.0.1",
+  "main": "dist/shader-composer-postprocessing.cjs.js",
+  "module": "dist/shader-composer-postprocessing.esm.js",
+  "files": [
+    "dist/**",
+    "LICENSE",
+    "README.md"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "build": "preconstruct build"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-typescript"
+    ]
+  },
+  "devDependencies": {
+    "@shader-composer/core": "workspace:^0.4.9"
+  },
+  "peerDependencies": {
+    "postprocessing": "^6.28.7",
+    "@shader-composer/core": ">=0.4.9",
+    "three": ">=0.141.0"
+  }
+}
