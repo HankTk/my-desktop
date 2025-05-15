@@ -12,9 +12,6 @@ class App {
 
     // DB Connection String
     public mongoUrl = 'mongodb://localhost/MyAccount';
-/*
-    public mongoUrl = 'mongodb://root:!Password1@ds023098.mlab.com:23098/hank';
-*/
 
     private io: SocketIO.Server;
 
