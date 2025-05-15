@@ -35,7 +35,66 @@ This will:
 
 ### Running Individual Apps
 
-Each project can be run, built, and tested individually. See the `README.md` in each subdirectory for more details and specific instructions.
+Each project can be run, built, and tested individually. Below are the instructions for launching each application:
+
+- **MyWebGL**
+  ```sh
+  cd MyWebGL
+  yarn install # or npm install
+  yarn start   # or npm start
+  # Opens at http://localhost:3010
+  ```
+
+- **MyTetris**
+  ```sh
+  cd MyTetris
+  yarn install # or npm install
+  yarn start   # or npm start
+  # Opens at http://localhost:8080
+  ```
+
+- **MyServer**
+  ```sh
+  cd MyServer
+  yarn install # or npm install
+  yarn run dev # for development mode
+  # or
+  yarn run prod # for production mode
+  # Default URL: http://localhost:9010
+  ```
+
+- **MyDiagrams**
+  ```sh
+  cd MyDiagrams
+  yarn install # or npm install
+  yarn start   # or npm start
+  # Opens at http://localhost:3000
+  ```
+
+- **MyClock**
+  ```sh
+  cd MyClock
+  yarn install # or npm install
+  yarn start   # or npm start
+  # Opens at http://localhost:3030
+  ```
+
+- **MyClient** (Electron app)
+  ```sh
+  cd MyClient
+  yarn install # or npm install
+  yarn start   # or npm start
+  # Launches the Electron desktop app
+  ```
+
+- **MySuite**
+  ```sh
+  cd MySuite
+  yarn install # or npm install
+  # See MySuite/README.md for details on running individual packages or example apps
+  ```
+
+See the `README.md` in each subdirectory for more details and specific instructions.
 
 ## License
 
